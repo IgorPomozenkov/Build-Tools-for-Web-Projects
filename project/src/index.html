@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="menu">
+            <li><a href="#" class="menu__link">Калькулятор дат</a></li>
+            <li><a href="#" class="menu__link">Таймер</a></li>
+        </ul>
+    
+        <form id="formDate">
+            <label>
+                <strong>Первая дата:</strong>
+                <input type="date" name="firstDate">
+            </label>
+            <label>
+                <strong>Вторая дата:</strong>
+                <input type="date" name="secondDate">
+            </label>
+            <button type="submit">Расчитать промежуток</button>
+        </form>
+
+        <div class="timer hidden">
+            <input type="number" id="time" min="0" placeholder="введите число">
+            <button type="submit" id="start">Старт</button>
+            <button type="submit" id="stop">Стоп</button>
+        </div>
+        <p class="formDate__message"></p>
+    </div>
+</body>
+</html>
